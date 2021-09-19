@@ -1,3 +1,10 @@
+<?php>
+
+$koneksi = mysqli_connect ("localhost", "root", " ", " ", "belajarphp");
+
+$results = mysqli_query($koneksi,"SELECT * FROM managers")
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,6 +39,7 @@
 </section>
 
 <table border="1">
+
   <tr>
     <th>Bil</th>
     <th>PRODUK</th>
@@ -40,7 +48,11 @@
     <th>STATUS</th>
     <th>AKSI</th>
   </tr>
+
+  <?php $x = 1; ?>
+  <?php while($row=mysqli_fetch_assoc($results)): ?>
   <tr>
+      <td><?php echo $x; ?></td>
     <td>1</td>
     <td>ARM BLOOD PRESSURE</td>
     <td>RM350</td>
@@ -74,13 +86,16 @@
   </tr>
     <tr>
     <td>5</td>
-    <td>VITAMIN E</td>
-    <td>RM120</td>
-    <td>50</td>
-    <td>BELUM BAYAR</td>
+    <td><?php echo $row["produk"];?></td>
+    <td><?php echo $row["harga"];?></td>
+    <td><?php echo $row["jumlah"];?></td>
+    <td><?php echo $row["aksi"];?></td>
     <td><button><a href="produk.php">BUY</a></button></td>
   </tr>
-
+  <?php $x++; ?>
+    <?php
+    endwhile;
+    ?>
 </table>
 </center>
 </body>
