@@ -9,7 +9,7 @@ $resultusr = $conn->query($dis_usr);
 $row = $resultusr->fetch_assoc(); 
 ?> 
 <html> 
- 
+
 <head> 
     <title>PFA</title> 
     <link rel="stylesheet" href="../style.css"> 
@@ -59,7 +59,6 @@ $row = $resultusr->fetch_assoc();
             <b>Status:</b> 
             <input type="text" name="status" value="<?php echo $row["status"]; ?>"> 
  
- 
         </center> 
         <br> 
         <center> 
@@ -68,5 +67,4 @@ $row = $resultusr->fetch_assoc();
         </center> 
     </form> 
 </body> 
- 
 </html>
