@@ -25,7 +25,7 @@ $result = mysqli_query($conn, $sql);
         | 
         <a href="list.php">Produk List </a> 
         | 
-        <a href="insert.php">Insert Product</a> 
+        <a href="insert.php">Insert Produk</a>
         ] 
     </nav> 
     <br> 
@@ -46,14 +46,13 @@ $result = mysqli_query($conn, $sql);
         ?> 
  
                 <tr> 
-                    <td><?php echo $row["produk "]; ?></td> 
+                    <td><?php echo $row["produk"]; ?></td> 
                     <td><?php echo $row["harga"]; ?></td> 
                     <td><?php echo $row["jumlah"]; ?></td> 
                     <td><?php echo $row["status"]; ?></td> 
-                    <td><?php echo $row["aksi"]; ?></td> 
                     <td colspan="2"> 
-                        <a href="update.php?produk=<?php echo $row["produk"]; ?>">Update</a> 
-                        <a href="delete.php?produk=<?php echo $row["produk"]; ?>" onclick="return confirm('Are you sure to delete?')">Delete</a> 
+                        <a href="updatecar.php?produk=<?php echo $row["produk"]; ?>">Update</a> 
+                        <a href="deletecar.php?produk=<?php echo $row["produk"]; ?>" onclick="return confirm('Are you sure to delete?')">Delete</a> 
                     </td> 
                 </tr> 
  
@@ -68,4 +67,5 @@ $result = mysqli_query($conn, $sql);
  
     </table> 
 </body> 
+
 </html>
