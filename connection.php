@@ -1,15 +1,19 @@
 <?php 
 
-$servername = "localhost";
-$username = "root";
-$password= "";
-$dbname = "produk";
+$host = "localhost";
+$user = "root";
+$pass= "";
+$db = "pfa";
 
-$conn = mysqli_connect($servername,$username,$password,$dbname);
+$conn = mysqli_connect($host,$user,$pass,$db);
 
 if (!$conn)
 {
-    die("Connection failed:".mysqli_connect_error()); //display error if the server cannot be connected
-}
+    echo 'Connected successfully to produk database';
 
+    $sql="insert into produk(idproduk,namaproduk,harga,kuantiti,status) values ('123','vitamilk',Rm123,'1','BELI')";
+    $query=mysqli_query($conn,$sql);
+    if($query)
+        echo 'data inserted successfully';
+}
 ?>

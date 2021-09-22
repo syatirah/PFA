@@ -36,20 +36,24 @@ require '../connection.php';
 
         <table align="center">
             <tr>
-                <td>Idkereta :</td>
-                <td> <input type="text" name="idkereta" size="48"> </td>
+                <td>Id Produk :</td>
+                <td> <input type="text" name="idproduk" size="48"> </td>
             </tr>
             <tr>
-                <td>Modal :</td>
-                <td> <input type="text" name="modal" size="48"> </td>
+                <td>Nama Produk :</td>
+                <td> <input type="text" name="namaproduk" size="48"> </td>
             </tr>
             <tr>
-                <td>Priceperday :</td>
-                <td> <input type="text" name="priceperday" size="48"> </td>
+                <td>Harga :</td>
+                <td> <input type="text" name="harga" size="48"> </td>
             </tr>
             <tr>
-                <td>Priceperweek :</td>
-                <td> <input type="text" name="priceperweek" size="48"> </td>
+                <td>Kuantiti :</td>
+                <td> <input type="text" name="kuantiti" size="48"> </td>
+            </tr>
+            <tr>
+                <td>Status :</td>
+                <td> <input type="text" name="status" size="48"> </td>
             </tr>
             <tr>
             <tr>
