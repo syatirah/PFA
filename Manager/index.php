@@ -46,7 +46,7 @@ $result = mysqli_query($conn, $sql);
         ?> 
  
                 <tr> 
-                    <td><?php echo $row["idproduk "]; ?></td> 
+                    <td><?php echo $row["idproduk"]; ?></td> 
                     <td><?php echo $row["namaproduk"]; ?></td> 
                     <td><?php echo $row["harga"]; ?></td> 
                     <td><?php echo $row["kuantiti"]; ?></td> 
