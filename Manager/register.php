@@ -25,7 +25,7 @@ require '../connection.php';
         |
         <a href="index.php">List Produk</a>
         |
-        <a href="register.php">Register </a>
+        <a href="insert.php">Register </a>
         ]
     </nav>
         </center>

@@ -26,7 +26,7 @@ $result = mysqli_query($conn, $sql);
         | 
         <a href="index.php">Produk List</a> 
         | 
-        <a href="insert.php">Insert Product</a> 
+        <a href="register.php">Insert Product</a> 
         ] 
     </nav> 
         </center>
