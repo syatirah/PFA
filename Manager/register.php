@@ -54,7 +54,7 @@ require '../connection.php';
             </tr>
             <tr>
                 <td>Status :</td>
-                <td> <input type="text" name="priceperweek" size="48"> </td>
+                <td> <input type="text" name="status" size="48"> </td>
             </tr>
             <tr>
             <tr>

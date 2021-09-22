@@ -2,7 +2,7 @@
 session_start(); 
 require '../connection.php'; 
  
-$idusr = $_GET["produk"]; 
+$idusr = $_GET["pfa"]; 
 $dis_usr = "SELECT * FROM produk WHERE idproduk='$idusr'"; 
 $resultusr = $conn->query($dis_usr); 
 echo $conn->error;

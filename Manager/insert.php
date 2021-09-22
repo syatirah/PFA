@@ -35,7 +35,7 @@ if ($status == "") {
 $sql = "INSERT INTO produk(idproduk,namaproduk,harga,kuantiti,status)VALUES('$idproduk','$namaproduk','$harga','$kuantiti','$status')";
 
 if ($conn->query($sql) === TRUE) { //true --->successfully
-    echo "<script>alert('Register Add Successfully');window.location='list.php'</script>";
+    echo "<script>alert('Register Add Successfully');window.location='index.php'</script>";
 } else {
     echo "Error:" . $sql . "<br>" . $conn->error;
 }
