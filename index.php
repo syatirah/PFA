@@ -25,7 +25,7 @@
             <h2>CRUD</h2>
         </div>
         <ul>
-            <li><a href="admin/index.php">Admin (syatirah)</a></li>
+            <li><a href="Manager/index.php">Admin (syatirah)</a></li>
             <p>- menguruskan senarai produk</p>
             <li><a href="staff/index.php">Staff (Shoban)</a></li>
             <p>- menguruskan senarai customer</p>
