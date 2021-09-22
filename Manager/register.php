@@ -17,17 +17,18 @@ require '../connection.php';
         </div>
         <center><br> Nama Programmer: admin (syatirah)</a></center>
     </div>
-
+<center>
     <nav style="background-color: hotpink">
         <strong style="font-size: xx-large"></strong>
         [
         <a class="active" href="index.php">Home</a>
         |
-        <a href="list.php">Car List </a>
+        <a href="index.php">List Produk</a>
         |
-        <a href="register.php">Register Car</a>
+        <a href="register.php">Register </a>
         ]
     </nav>
+        </center>
     <br><br>
     <center>
         <h2>Register Car</h2>
@@ -53,7 +54,7 @@ require '../connection.php';
             </tr>
             <tr>
                 <td>Status :</td>
-                <td> <input type="text" name="status" size="48"> </td>
+                <td> <input type="text" name="priceperweek" size="48"> </td>
             </tr>
             <tr>
             <tr>

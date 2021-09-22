@@ -18,17 +18,20 @@ $result = mysqli_query($conn, $sql);
         <h2>Produk Alatan Farmasi</h2> 
         <br> Nama Programmer: admin(syatirah)</a> 
     </center> 
+    <center>
     <nav style="background-color: hotpink"> 
         <strong style="font-size: xx-large"></strong> 
         [ 
         <a class="active" href="../index.php">Home</a> 
         | 
-        <a href="list.php">Produk List</a> 
+        <a href="index.php">Produk List</a> 
         | 
         <a href="insert.php">Insert Product</a> 
         ] 
     </nav> 
+        </center>
     <br> 
+    <center>
     <table border="1"> 
         <tr> 
             <th>ID Produk</th> 
@@ -67,5 +70,6 @@ $result = mysqli_query($conn, $sql);
         ?> 
  
     </table> 
+    </center>
 </body> 
 </html>
