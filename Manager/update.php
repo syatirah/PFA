@@ -1,13 +1,12 @@
 <?php 
-
 session_start(); 
 require '../connection.php'; 
  
 $idusr = $_GET["produk"]; 
-$dis_usr = "SELECT * FROM produk WHERE produk='$idusr'"; 
+$dis_usr = "SELECT * FROM produk WHERE idproduk='$idusr'"; 
 $resultusr = $conn->query($dis_usr); 
-
-$row = $resultusr
+echo $conn->error;
+$row = $resultusr->fetch_assoc();
 
 ?> 
 
@@ -26,7 +25,7 @@ $row = $resultusr
         </div> 
         <center><br> Nama Programmer: admin (syatirah)</a></center> 
     </div> 
- 
+    <center>
     <nav style="background-color: hotpink"> 
         <strong style="font-size: xx-large"></strong> 
         [ 
@@ -37,7 +36,7 @@ $row = $resultusr
         <a href="insert.php">Insert Produk</a>
         ] 
     </nav> 
- 
+        </center>
     <br><br> 
     <center> 
         <h2>Update Produk</h2> 
