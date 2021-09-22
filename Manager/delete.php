@@ -1,9 +1,9 @@
 <?php 
 require '../connection.php'; 
  
-$produk = $_GET['managers']; 
+$idproduk = $_GET['idproduk']; 
  
-$deleteusr = "DELETE FROM managers WHERE produk='$idproduk'"; 
+$deleteusr = "DELETE FROM produk WHERE idproduk='$idproduk'"; 
 $resultdelete -= $conn->query($deleteusr); 
  
 ?> 

@@ -2,7 +2,7 @@
 session_start(); 
 require '../connection.php'; 
  
-$sql = "SELECT * FROM managers"; 
+$sql = "SELECT * FROM produk"; 
 $result = mysqli_query($conn, $sql); 
 ?> 
  
@@ -31,11 +31,11 @@ $result = mysqli_query($conn, $sql);
     <br> 
     <table border="1"> 
         <tr> 
-            <th>Produk</th> 
+            <th>ID Produk</th> 
+            <th>Nama Produk</th> 
             <th>Harga</th> 
-            <th>Jumlah</th> 
+            <th>Kuantiti</th> 
             <th>Status</th> 
-            <th>Aksi</th> 
         </tr> 
  
         <?php 
@@ -46,14 +46,14 @@ $result = mysqli_query($conn, $sql);
         ?> 
  
                 <tr> 
-                    <td><?php echo $row["produk "]; ?></td> 
+                    <td><?php echo $row["idproduk "]; ?></td> 
+                    <td><?php echo $row["namaproduk"]; ?></td> 
                     <td><?php echo $row["harga"]; ?></td> 
-                    <td><?php echo $row["jumlah"]; ?></td> 
+                    <td><?php echo $row["kuantiti"]; ?></td> 
                     <td><?php echo $row["status"]; ?></td> 
-                    <td><?php echo $row["aksi"]; ?></td> 
                     <td colspan="2"> 
-                        <a href="update.php?produk=<?php echo $row["produk"]; ?>">Update</a> 
-                        <a href="delete.php?produk=<?php echo $row["produk"]; ?>" onclick="return confirm('Are you sure to delete?')">Delete</a> 
+                        <a href="update.php?produk=<?php echo $row["idproduk"]; ?>">Update</a> 
+                        <a href="delete.php?produk=<?php echo $row["idproduk"]; ?>" onclick="return confirm('Are you sure to delete?')">Delete</a> 
                     </td> 
                 </tr> 
  
