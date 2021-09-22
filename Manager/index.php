@@ -16,14 +16,14 @@ $result = mysqli_query($conn, $sql);
 <body> 
     <center> 
         <h2>Produk Alatan Farmasi</h2> 
-        <br> Nama Programmer: admin (syatirah)</a> 
+        <br> Nama Programmer: admin(syatirah)</a> 
     </center> 
     <nav style="background-color: hotpink"> 
         <strong style="font-size: xx-large"></strong> 
         [ 
         <a class="active" href="../index.php">Home</a> 
         | 
-        <a href="list.php">Produk List </a> 
+        <a href="list.php">Produk List</a> 
         | 
         <a href="insert.php">Insert Product</a> 
         ] 

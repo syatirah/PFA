@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2021 at 02:01 AM
+-- Generation Time: Sep 22, 2021 at 02:26 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -24,15 +24,15 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `managers`
+-- Table structure for table `produk`
 --
 
-CREATE TABLE `managers` (
-  `produk` varchar(30) NOT NULL,
+CREATE TABLE `produk` (
+  `idproduk` int(30) NOT NULL,
+  `namaproduk` varchar(20) NOT NULL,
   `harga` varchar(10) NOT NULL,
-  `jumlah` int(10) NOT NULL,
-  `status` varchar(10) NOT NULL,
-  `aksi` varchar(10) NOT NULL
+  `kuantiti` int(20) NOT NULL,
+  `status` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -40,10 +40,20 @@ CREATE TABLE `managers` (
 --
 
 --
--- Indexes for table `managers`
+-- Indexes for table `produk`
 --
-ALTER TABLE `managers`
-  ADD PRIMARY KEY (`produk`);
+ALTER TABLE `produk`
+  ADD PRIMARY KEY (`idproduk`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `produk`
+--
+ALTER TABLE `produk`
+  MODIFY `idproduk` int(30) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

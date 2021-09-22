@@ -2,12 +2,13 @@
 session_start();  
 require '../connection.php';  
   
+$idproduk=$_POST['idproduk'];  
+$namaproduk=$_POST['namaproduk'];  
 $harga=$_POST['harga'];  
-$jumlah=$_POST['jumlah'];  
-$status=$_POST['status'];  
-$produk=$_POST['produk']; //drp input hndden  
-  
-$sql = "UPDATE produk SET produk='$produk',harga='$harga',jumlah='$jumlah',status='$status' where produk='$produk'";  
+$kuantiti=$_POST['kuantiti']; //drp input hndden  
+$status=$_POST['status'];
+
+$sql = "UPDATE produk SET idproduk='$idproduk',namaproduk='$namaproduk',harga='$harga',kuantiti='$kuantiti',status='$status' where idproduk='$idproduk'";  
   
 if($conn->query($sql)=== TRUE){   //true --->successfully  
   echo "<script>alert('Update Successfully');window.location='list.php'</script>";  
