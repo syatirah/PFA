@@ -31,7 +31,7 @@ require '../connection.php';
         </center>
     <br><br>
     <center>
-        <h2>Register Car</h2>
+        <h2>Register Produk</h2>
     </center>
     <form action="insert.php" method="post">
 
