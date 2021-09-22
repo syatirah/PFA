@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2021 at 03:04 AM
+-- Generation Time: Sep 22, 2021 at 07:07 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -18,31 +18,40 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `produk`
+-- Database: `pfa`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pfa`
+-- Table structure for table `produk`
 --
 
-CREATE TABLE `pfa` (
-  `idproduk` int(10) NOT NULL,
-  `namaproduk` varchar(20) NOT NULL,
-  `harga` int(10) NOT NULL,
+CREATE TABLE `produk` (
+  `idproduk` int(20) NOT NULL,
+  `namaproduk` varchar(30) NOT NULL,
+  `harga` varchar(10) NOT NULL,
   `kuantiti` int(20) NOT NULL,
   `status` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `produk`
+--
+
+INSERT INTO `produk` (`idproduk`, `namaproduk`, `harga`, `kuantiti`, `status`) VALUES
+(1234, 'blood pressure', '350', 1, 'Data Entry'),
+(1235, '', '', 0, ''),
+(1236, '', '', 0, '');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `pfa`
+-- Indexes for table `produk`
 --
-ALTER TABLE `pfa`
+ALTER TABLE `produk`
   ADD PRIMARY KEY (`idproduk`);
 
 --
@@ -50,10 +59,10 @@ ALTER TABLE `pfa`
 --
 
 --
--- AUTO_INCREMENT for table `pfa`
+-- AUTO_INCREMENT for table `produk`
 --
-ALTER TABLE `pfa`
-  MODIFY `idproduk` int(10) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `produk`
+  MODIFY `idproduk` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1237;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
